@@ -1,0 +1,119 @@
+@import url('./assets/fonts/Roboto-Bold.ttf');
+:root{
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --tomato:hsl(4, 100%, 67%);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    min-height: 100vh;
+    background-color: var(--charcoalGrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--darkSlateGrey);
+}
+
+main{
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+.signUp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    min-width: 50rem;
+    max-width: 53rem;
+}
+#illustration,.signUp div{
+    width: 48%;
+}
+.signUp div{
+    padding: 0 0 0 1rem;
+}h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}.signUp div #join{
+    margin: 1.5rem 0;
+}
+.message{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+form{
+    margin: 1.5rem 0;
+}
+#errorMessageParagraph{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+#errorMessage{
+    color:red;
+}
+#email,.submit{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    border: 2px solid var(--grey);
+}
+.submit{
+    background-color: var(--darkSlateGrey);
+    color: var(--white);
+    cursor: pointer;
+    margin: 0;
+    border: none;
+}
+.success{
+    width: clamp(20rem,24rem, 25rem);
+    padding: 1.5rem 0.5rem;
+}
+.success h1{
+    margin-top: 1rem;
+}
+.success p{
+    margin: 1.5rem 0;
+}
+.success button{
+    width: 100%;
+    padding: 1rem;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--darkSlateGrey);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (width <= 750px){
+
+}
+.attribution { font-size: 11px; text-align: center; color: var(--white);margin-top: 1rem;}
+.attribution a { color: var(--tomato); }
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
