@@ -10,7 +10,7 @@
 <body>
   <main>
     <!-- Sign-up form start -->
-    <section data-signUp class="signUp" >
+    <section data-signUp class="signUp d-none" >
       <div>
         <h1>Stay updated!</h1>
         <p id="join">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -33,10 +33,12 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section data-success class="success d-none" >
-      <img src="/assets/images/icon-success.svg" alt="">
-      <h1>Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to <strong><span data-mail id="userMail">ash@loremcompany.com.</span></strong> Please open it and click the button inside to confirm your subscription.</p>
+    <section data-success class="success" >
+      <div>
+        <img src="/assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <strong><span data-mail id="userMail">ash@loremcompany.com.</span></strong> Please open it and click the button inside to confirm your subscription.</p>
+      </div>
       <button data-dismiss>Dismiss message</button>
     </section>
     <!-- Success message end -->
