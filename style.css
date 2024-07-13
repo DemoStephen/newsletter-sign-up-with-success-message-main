@@ -29,7 +29,7 @@ body{
 main{
     background-color: var(--white);
     border-radius: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     width: min(50rem, fit-content);
 }
 .signUp{
